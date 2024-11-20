@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ships go</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/src/assets/style.css">
+    <link rel="stylesheet" href="/src/output.css">
+</head>
+<body class="m-0">
+    <header class="bg-white text-white">
+        <div class=" border-black shadow-md py-2">
+            <div class="flex items-center justify-between px-4">
+                <div class="flex items-center space-x-2">
+                    <img src="SHIPS GO (3).svg" alt="Logo" class="w-16 h-16 bg-white rounded-lg p-1">
+                </div>
+    
+                <div class="flex items-center space-x-2 lg:left-28 lg:absolute text-black">
+                    <span id="search-icon" class="cursor-pointer text-gray-600" onclick="toggleSearchBar()">
+                        <img src="busqueda-de-lupa.png" alt="Buscar" class="w-6 h-6"> <!-- Tamaño de la lupa -->
+                    </span>
+                    
+                    <div id="search-bar" class="lg:hidden flex flex-grow max-w-lg bg-white  border-b border-black items-center relative">
+                        <input type="text" placeholder="Buscar..." class="pl-4 py-1  outline-none text-base w-full">
+                    </div>
+                </div>
+                
+                <div class="flex items-center">
+                    <a href="#" class="hover:bg-blue-600 p-1 rounded-md transition-colors flex items-center justify-center focus:border focus:border-black">
+                        <img src="cart.png" alt="Carrito" class="w-9 h-9"> 
+                    </a>
+                </div>
+            </div>
+    
+            <div class="text-black mt-2">
+                <nav class="navbarItems">
+                    <ul class="flex flex-col md:flex-row justify-center space-y-2 md:space-y-0 md:space-x-6 text-base">
+                        <li><a href="#" class="hover:bg-blue-800 px-3 py-1 rounded-md transition-colors">Inicio</a></li>
+                        <li><a href="sobre.html" class="hover:bg-blue-800 px-3 py-1 rounded-md transition-colors">Sobre Nosotros</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+    
+    
+    <section class="mt-8 ">
+        <h2 class="title-section text-center text-4xl mb-6">Destacado</h2>
+        <div class="flex justify-center text-white p-4">
+        <div class="container2 scroll-1 text-center items-center ">
+          <br>
+          <div class="card w-56 flex flex-col justify-between border-none rounded-lg shadow-md overflow-hidden">
+            <div class="card__image">
+                <img src="imagen4.webp" alt="MacBook Air M2" class="w-full h-40 object-cover">
+            </div>
+            <div class="card__content p-4">
+                <span class="card__title text-lg font-bold">MacBook Air M2 (2022) 13.6"</span>
+                <p class="card__describe text-gray-700">$2.463.423</p>
+            </div>
+            <button class="relative py-2 px-8 text-white text-base font-bold border border-blue-500 rounded-full transition duration-300 ease-in-out hover:text-green-500 active:scale-95">COMPRAR</button>
+        </div>
+    
+        <div class="card w-56 flex flex-col justify-between  rounded-lg shadow-md overflow-hidden">
+            <div class="card__image">
+                <img src="imagen5.png" alt="Iphone 16 Pro Max" class="w-full h-40 object-cover">
+            </div>
+            <div class="card__content p-4">
+                <span class="card__title text-lg font-bold">Apple iPhone 16 Pro Max (256 GB)</span>
+                <p class="card__describe text-gray-700">$800.000</p>
+            </div>
+            <button class="relative py-2 px-8 text-white text-base font-bold border border-blue-500 rounded-full transition duration-300 ease-in-out hover:text-green-500 active:scale-95">COMPRAR</button>
+        </div>
+    
+        <div class="card w-56 flex flex-col justify-between  rounded-lg shadow-md overflow-hidden">
+            <div class="card__image">
+                <img src="imagen6..png" alt="Acer Nitro" class="w-full h-40 object-cover">
+            </div>
+            <div class="card__content p-4">
+                <span class="card__title text-lg font-bold">Acer Nitro KG241Y Sbiip 23.8” Full HD</span>
+                <p class="card__describe text-gray-700">$460.000</p>
+            </div>
+            <button class="relative py-2 px-8 text-white text-base font-bold border border-blue-500 rounded-full transition duration-300 ease-in-out hover:text-green-500 active:scale-95">COMPRAR</button>
+        </div>
+    
+        <div class="card w-56 flex flex-col justify-between  rounded-lg shadow-md overflow-hidden">
+            <div class="card__image">
+                <img src="imagen7.png" alt="HP smart" class="w-full h-40 object-cover">
+            </div>
+            <div class="card__content p-4">
+                <span class="card__title text-lg font-bold">HP Smart-Tank 5000 Wireless All-in-One</span>
+                <p class="card__describe text-gray-700">$215.000</p>
+            </div>
+            <button class="relative py-2 px-8 text-white text-base font-bold border border-blue-500 rounded-full transition duration-300 ease-in-out hover:text-green-500 active:scale-95">COMPRAR</button>
+        </div>
+    
+        <div class="card w-56 flex flex-col justify-between rounded-lg shadow-md overflow-hidden">
+            <div class="card__image">
+                <img src="imagen8.png" alt="Dewalt 20v" class="w-full h-40 object-cover">
+            </div>
+            <div class="card__content p-4">
+                <span class="card__title text-lg font-bold">DEWALT 20V MAX Power Tool Combo Kit</span>
+                <p class="card__describe text-gray-700">$195.000</p>
+            </div>
+            <button class="relative py-2 px-8 text-white text-base font-bold border border-blue-500 rounded-full transition duration-300 ease-in-out hover:text-green-500 active:scale-95">COMPRAR</button>
+        </div>
+    
+        <div class="card w-56 flex flex-col justify-between  rounded-lg shadow-md overflow-hidden">
+            <div class="card__image">
+                <img src="imagen9.png" alt="Y oga Mat" class="w-full h-40 object-cover">
+            </div>
+            <div class="card__content p-4">
+                <span class="card__title text-lg font-bold">Bicleta fija</span>
+                <p class="card__describe text-gray-700">$454.000</p>
+            </div>
+            <button class="relative py-2 px-8 text-white text-base font-bold border border-blue-500 rounded-full transition duration-300 ease-in-out hover:text-green-500 active:scale-95">COMPRAR</button>
+        </div>
+    
+        <div class="card w-56 flex flex-col justify-between  rounded-lg shadow-md overflow-hidden">
+            <div class="card__image">
+                <img src="imagen10.png" alt="Smartwatch" class="w-full h-40 object-cover">
+            </div>
+            <div class="card__content p-4">
+                <span class="card__title text-lg font-bold">Smartwatch Fitness Tracker</span>
+                <p class="card__describe text-gray-700">$120.000</p>
+            </div>
+            <button class="relative py-2 px-8 text-white text-base font-bold border border-blue-500 rounded-full transition duration-300 ease-in-out hover:text-green-500 active:scale-95">COMPRAR</button>
+        </div>
+                <br>
+        </div>
+
+</div>
+
+    
+
+          
+
+        <!-- <div class="flex justify-center w-full items-center relative max-w-full m-0">
+            <div class="inline-block top-1/2 text-sm translate-y-1/2 text-white z-10 bg p-4 rounded left-0">
+                <p>Texto izquierdo</p>
+            </div>
+
+            <div class="relative w-full max-w-xl overflow-hidden">
+                <div id="slider" class="flex transition-transform duration-500 ease-in-out">
+                    <img src="/assets/IMG/imagen1.webp" alt="Imagen 1" class="w-full flex-shrink-0" style="max-height: 600px;">
+                    <img src="/assets/IMG/imagen4.webp" alt="Imagen 2" class="w-full flex-shrink-0" style="max-height: 600px;">
+                    <img src="/assets/IMG/imagen6.webp" alt="Imagen 3" class="w-full flex-shrink-0" style="max-height: 600px;">
+                </div>
+                <button onclick="prevSlide()" class="absolute top-1/2 translate-y-1/2 text-4xl text-white rounded-tr-full">
+                    &#8592;
+                </button>
+                <button onclick="nextSlide()" class="absolute top-1/2 -translate-y-1/2 text-4xl text-white rounded-tr-full right-3">
+                    &#8594;
+                </button>
+            </div>
+            <div class="inline-block top-1/2 text-sm translate-y-1/2 text-white z-10 bg p-4 rounded right-0"> <p>Texto derecho</p>
+            </div>
+        </div>
+        -->
+    </section>
+    <article>
+        <div class="flex justify-center flex-wrap gap-4">
+            <div class="relative w-full sm:w-1/2 md:w-1/3 lg:w-1/4 bg-gray-300 p-3 flex flex-col gap-1 justify-center">
+              <div class="h-96 bg-cover bg-center duration-500 contrast-50 hover:contrast-100" style="background-image: url('electro.jpg');"></div>
+              <div class="flex flex-col gap-4">
+                <div class="flex flex-row justify-between">
+                  <div class="flex flex-col">
+                    <span class="text-xl font-bold">Electrodomesticos</span>
+                    <p class="text-xs text-gray-700">ID: 23432252</p>
+                  </div class="md:block">
+                  <span class="font-bold text-red-600">Desde $25.99</span>
+                </div>
+                <button class="hover:bg-sky-700 text-gray-50 bg-sky-800 py-2">Explorar</button>
+              </div>
+            </div>
+          
+            <div class="relative w-full sm:w-1/2 md:w-1/3 lg:w-1/4 bg-gray-300 p-3 flex flex-col gap-1 justify-center">
+              <div class="h-96 bg-cover bg-center duration-500 contrast-50 hover:contrast-100" style="background-image: url('sillas.jpg');"></div>
+              <div class="flex flex-col gap-4">
+                <div class="flex flex-row justify-between">
+                  <div class="flex flex-col">
+                    <span class="text-xl font-bold">Sillas</span>
+                    <p class="text-xs text-gray-700">ID: 12345678</p>
+                  </div>
+                  <span class="font-bold text-red-600">Desde $45.99</span>
+                </div>
+                <button class="hover:bg-sky-700 text-gray-50 bg-sky-800 py-2">Explorar</button>
+              </div>
+            </div>
+          
+            <div class="relative w-full sm:w-1/2 md:w-1/3 lg:w-1/4 bg-gray-300 p-3 flex flex-col gap-1 justify-center">
+              <div class="h-96 bg-cover bg-center duration-500 contrast-50 hover:contrast-100" style="background-image: url('mesas.png');"></div>
+              <div class="flex flex-col gap-4">
+                <div class="flex flex-row justify-between">
+                  <div class="flex flex-col">
+                    <span class="text-xl font-bold">Mesas</span>
+                    <p class="text-xs text-gray-700">ID: 98765432</p>
+                  </div>
+                  <span class="font-bold text-red-600">Desde $30.99</span>
+                </div>
+                <button class="hover:bg-sky-700 text-gray-50 bg-sky-800 py-2">Explorar</button>
+              </div>
+            </div>
+          </div>
+          
+          
+          
+
+    </article>
+    <script src="/src/assets/js/script.js"></script>
+    <footer class="bg-custom-gray-black text-gray-200 py-8 mt-10 h-1/4">
+        <div class="h-42 container mx-auto flex flex-wrap justify-between md:p-2">
+          <div class="w-full md:w-1/4 mb-6 md:hidden">
+            <h2 class="text-2xl font-bold mb-4">Shipsgo</h2>
+            <p class="text-sm text-gray-400 ">
+              Tu mejor opción en muebles y electrodomésticos. Descubre nuestros productos de alta calidad y precios accesibles.
+            </p>
+          </div>
+      
+          <div class="w-full md:w-1/4 mb-6">
+            <h3 class="text-lg font-semibold mb-3">Enlaces Rápidos</h3>
+            <ul class="text-gray-400">
+              <li><a href="#" class="hover:text-gray-100">Inicio</a></li>
+              <li><a href="#" class="hover:text-gray-100">Productos</a></li>
+              <li><a href="#" class="hover:text-gray-100">Ofertas</a></li>
+              <li><a href="#" class="hover:text-gray-100">Contacto</a></li>
+            </ul>
+          </div>
+      
+          <div class="w-full md:w-1/4 mb-6">
+            <h3 class="text-lg font-semibold mb-3">Contacto</h3>
+            <p class="text-gray-400">Teléfono: +123 456 789</p>
+            <p class="text-gray-400">Email: contacto@shipsgo.com</p>
+            <p class="text-gray-400">Dirección: Av Fransisco Beiro 2384, Comuna 11</p>
+          </div>
+      
+          <div class="w-full md:w-1/4 mb-6">
+            <h3 class="text-lg font-semibold mb-3">Síguenos</h3>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-gray-100">
+                <img src="whatsapp-svgrepo-com.svg" class="w-6 h-6">              </a>
+              <a href="#" class="text-gray-400 hover:text-gray-100">
+                <img src="instagram-svgrepo-com.svg" class="w-6 h-6">
+              </a>
+              <a href="#" class="text-gray-400 hover:text-gray-100">
+                <img src="facebook-svgrepo-com.svg" class="w-6 h-6">              </a>
+            </div>
+          </div>
+        </div>
+      
+
+      </footer>
+      
+</body>
+</html>
